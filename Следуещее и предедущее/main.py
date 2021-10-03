@@ -1,0 +1,6 @@
+input=open("input.txt")
+inpF=input.read()
+input.close()
+output=open("output.txt","w",)
+output.write("Следущее число "+str(inpF)+", "+str(int(inpF)+1)+".\nПредыдущее число "+str(inpF)+", "+str(int(inpF)-1)+".")
+output.close()
