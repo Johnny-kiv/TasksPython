@@ -14,6 +14,6 @@ for l in i:
 if o>c:
     print("-1")
 elif o<c:
-    print(f"Error :/ {mas[-1]}")
+    print(f"Error :/ index {mas[len(mas)-(c-o)]}")
 else:
     print("0")
