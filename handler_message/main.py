@@ -11,6 +11,8 @@ while True:
         print(datetime.datetime.now().time())
     elif t=="какая погода?":
         print("Температура: "+str(random.randint(-10,10))+"C,",pogoda[random.randint(0,3)],".")
+    elif t=="дай бабла!":
+        print("Даю -",random.randint(0,1000000000),"$ $)")
     elif t=="0":
         print("Досвидос амигос")
         break
