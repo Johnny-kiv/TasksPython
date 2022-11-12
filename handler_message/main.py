@@ -6,5 +6,6 @@ while True:
         print("Все чики-пуки, хозяин!")
     elif t=="0":
         print("Досвидос амигос")
+        break
     else:
         print("Error :(")
