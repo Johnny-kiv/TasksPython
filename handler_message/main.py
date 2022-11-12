@@ -1,5 +1,5 @@
 t = input()
 if t == "Привет":
-    print("Здравствуй")
+    print("Здравствуй, хозяин!")
 else:
     print("Error :(")
