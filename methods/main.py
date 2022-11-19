@@ -1,6 +1,12 @@
 def CL(i):
-    res = i + " кол-во букв " + str(len(i))
-    print(res)
+    r = 0
+    res = i.split(" ")
+    b = res[0] > res[1]
+    if b:
+        r = len(res[0])
+    else:
+        r = len(res[1])
+    return r
 i = input("Введите словечко: ")
-CL(i)
+print(CL(i))
 
