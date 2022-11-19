@@ -3,5 +3,4 @@ def CL(i):
     print(res)
 i = input("Введите словечко: ")
 CL(i)
-i = input("Введите словечко: ")
-CL(i)
+
