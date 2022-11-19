@@ -1,7 +1,7 @@
 def CL(i):
     r = 0
     res = i.split(" ")
-    b = res[0] > res[1]
+    b = len(res[0]) > len(res[1])
     if b:
         r = res[0]
     else:
