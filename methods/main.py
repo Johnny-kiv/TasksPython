@@ -1,3 +1,5 @@
+def CL(i):
+    res = i + " кол-во букв " + str(len(i))
+    return res
 i = input("Введите имя: ")
-res = i + " кол-во букв " + str(len(i))
-print(res)
+print(CL(i))
