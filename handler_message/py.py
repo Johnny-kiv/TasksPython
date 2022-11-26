@@ -19,5 +19,5 @@ while True:
     else:
         print("Error :(")"""
 f = open("input.txt","r")
-line = f.readlines()
-print(line)
+line = f.read().split("О")
+print(line[0]+line[2]+line[3]+line[1])
