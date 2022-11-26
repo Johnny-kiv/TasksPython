@@ -1,3 +1,16 @@
+import mysql.connector
+
+db = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    passwd="qazwsxedc",
+    database="test_dp"
+)
+
+# getting the cursor by cursor() method
+mycursor = db.cursor()
+
+
 """import datetime
 import random
 pogoda = ["Облачность","Солнечно","Дождь","Гроза"]
@@ -24,3 +37,11 @@ line = f.read().split("\n")
 for i in line:
     l+=1
     print(f"Строка {l}",len(i))
+    insertQuery = f'''INSERT INTO 
+                Staff  (id, name, position, birthday) 
+                VALUES ({l}, 'Anatoliy','{len(i)}','2022.02.15');'''
+    mycursor.execute(insertQuery)
+db.commit()
+
+# close the Connection
+db.close()
