@@ -19,5 +19,8 @@ while True:
     else:
         print("Error :(")"""
 f = open("input.txt","r")
-line = f.read().split("О")
-print(line[0]+line[2]+line[3]+line[1])
+l=0
+line = f.read().split("\n")
+for i in line:
+    l+=1
+    print(f"Строка {l}",len(i))
