@@ -1,4 +1,4 @@
-import datetime
+"""import datetime
 import random
 pogoda = ["Облачность","Солнечно","Дождь","Гроза"]
 while True:
@@ -17,4 +17,7 @@ while True:
         print("Досвидос амигос")
         break
     else:
-        print("Error :(")
+        print("Error :(")"""
+f = open("input.txt","r")
+line = f.readlines()
+print(line)
