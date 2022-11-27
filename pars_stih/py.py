@@ -13,6 +13,7 @@ for u in urls:
     name = soup.find("section",class_="content").find("h1")
     o.write("\t"+"\t"+"\t"+name.text)
     o.write(aftor.text)
+    o.write("\n")
     for p in poema:
         o.write(p.text+"\n")
 
