@@ -19,5 +19,5 @@ l=0
 p = "мама мыла раму"
 masi = []
 for i in range(len(p)):
-    if p[i]=="а":
+    if p[i]=="м":
         print(p[i-1]+p[i]+p[i+1])
