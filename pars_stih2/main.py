@@ -1,4 +1,4 @@
-import requests
+"""import requests
 import sqlite3
 from bs4 import BeautifulSoup
 
@@ -28,9 +28,19 @@ for aut in authors:
             o.write("\n")
             for p in poema:
                 o.write(p.text+"\n")
-            insertQuery = f'''INSERT INTO 
-                        Stixes  (id, author, name, file_name) 
+            insertQuery = f'''INSERT INTO
+                        Stixes  (id, author, name, file_name)
                         VALUES ({l}, '{aftor.text.split("   ")[4]}','{name.text}','stih_{a.split('/')[3]}_{l}');'''
             cur.execute(insertQuery)
             conn.commit()
-conn.close()
+conn.close()"""
+from bs4 import BeautifulSoup
+import requests
+url = requests.get("https://stihibase.ru/author/").content
+rest = BeautifulSoup(url)
+authors = rest.find_all("li",class_="alfavit-stixi-title")
+for i in authors:
+    try:
+        print("https://stihibase.ru"+i.find("a").get("href"))
+    except:
+        pass
