@@ -34,7 +34,7 @@ for aut in authors:
             cur.execute(insertQuery)
             conn.commit()
 conn.close()"""
-from bs4 import BeautifulSoup
+"""from bs4 import BeautifulSoup
 import requests
 url = requests.get("https://stihibase.ru/author/").content
 rest = BeautifulSoup(url)
@@ -43,4 +43,14 @@ for i in authors:
     try:
         print("https://stihibase.ru"+i.find("a").get("href"))
     except:
-        pass
+        pass"""
+from bs4 import BeautifulSoup
+import requests
+url = requests.get("https://stihibase.ru/author/").content
+rest = BeautifulSoup(url)
+authors = rest.find_all("a")
+for i in authors:
+    p = i.get("href").split("/")
+    if p[1]=="author":
+        p = i.get("href")
+        print("https://stihibase.ru"+p)
