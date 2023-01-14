@@ -1,16 +1,19 @@
 #команда парисинга
 #snscrape --max-result 10 --jsonl telegram-channel python2day > txt.txt
 import json
+import subprocess
 from bs4 import BeautifulSoup
 import requests
+ip = input()
+subprocess.run("pip install snscrape",shell=True)
+subprocess.run(f"snscrape --max-result 10 --jsonl telegram-channel {ip} > txt.txt",shell=True)
 inp = open("txt.txt")
 inp = inp.readlines()
 for i in inp:
-    j = json.loads(i)
-    url = j["url"]
-    u = url.split("https://t.me/s/python2day/")
-    src = BeautifulSoup(requests.get(f"https://t.me/s/python2day/{u[1]}").text)
-    b = src.find(attrs={"data-post" : f"python2day/{u[1]}"}).find_all("b")
-    for t in b:
-        print(t.text)
-    print()
+    jsn = json.loads(i)
+    url = jsn["url"]
+    datapost = url.split("/")[-1]
+    src = BeautifulSoup(requests.get(url).text)
+    print("################")
+    statey = src.find(attrs={"data-post" : f"{ip}/{datapost}"}).text
+    print(statey)
