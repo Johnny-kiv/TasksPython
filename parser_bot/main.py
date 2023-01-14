@@ -15,5 +15,6 @@ for i in inp:
     datapost = url.split("/")[-1]
     src = BeautifulSoup(requests.get(url).text)
     print("################")
-    statey = src.find(attrs={"data-post" : f"{ip}/{datapost}"}).text
-    print(statey)
+    statey = src.find(attrs={"data-post" : f"{ip}/{datapost}"})
+    for j in str(statey).split("<br>"):
+        print(j)
