@@ -1,0 +1,6 @@
+a = abs(int(input("Enter the number a: ")))
+b = abs(int(input("Enter the number b: ")))
+print(f"The sum of modules is {a+b}.")
+print(f"The difference of modules {a} and {b} is {abs(a-b)}.")
+print(f"The product of modules is {a*b}.")
+print(f"The quotient of modules is {a/b}.")
