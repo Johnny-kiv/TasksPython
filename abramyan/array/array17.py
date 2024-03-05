@@ -6,6 +6,6 @@ n = int(input("Введите число N: "))
 for i in range(n):
     inp = input("Введите что-нибудь: ")
     mas.append(inp)
-l = len(mas)-1
+l = len(mas)
 for i in range(0,l,2):
-    print(mas[i],mas[i+1],mas[-i-1],end=" ")
+    print(mas[i],mas[i+1],mas[i],end=" ")
