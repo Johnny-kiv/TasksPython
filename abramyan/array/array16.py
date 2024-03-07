@@ -3,9 +3,9 @@
 A1, AN , A2, AN−1, A3, AN−2, . . . .
 """
 mas = []
-n = int(input("Введите число N: "))
+n = int(input("Enter the number N: "))
 for i in range(n):
-    inp = input("Введите что-нибудь: ")
+    inp = input("Enter something: ")
     mas.append(inp)
 l = len(mas)
 for i in range(l):
