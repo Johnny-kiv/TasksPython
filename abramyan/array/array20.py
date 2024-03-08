@@ -3,11 +3,13 @@
 сумму элементов массива с номерами от K до L включительно
 """
 mas = []
+sum = 0
 n = int(input("Enter the number N: "))
 k = int(input("Enter the number K: "))
 l = int(input("Enter the number L: "))
 for i in range(n):
-    inp = input("Enter something: ")
+    inp = int(input("Enter the number: "))
     mas.append(inp)
 for i in range(k-1,l):
-    print(mas[i],end=" ")
+    sum+=mas[i]
+print(sum)
