@@ -11,7 +11,9 @@ for i in range(n):
     inp = int(input("Enter the number: "))
     mas.append(inp)
 a = mas[0]
-d = mas[0]-a
-for i in range(1,n):
-    print(i)
+d = mas[1]-a
+for i in range(0,n):
+    if not a+i*d==mas[i]:
+        d = 0
+        break
 print(d)

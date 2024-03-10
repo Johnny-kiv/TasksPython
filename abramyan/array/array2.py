@@ -4,9 +4,6 @@
 8, 16, . . . .
 """
 n = int(input("Enter the number N: "))
-arr = []
 for i in range(1,n+1):
     num = 2**(i)
-    arr.append(num)
-for i in arr:
-    print(i,end=" ")
+    print(num,end=" ")
