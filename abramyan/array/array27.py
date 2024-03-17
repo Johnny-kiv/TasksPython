@@ -15,4 +15,5 @@ for i in range(0,n):
         zn2=mas[i+1]>0 
         if zn1==zn2:
             res=i+1
+            break
 print(res)
