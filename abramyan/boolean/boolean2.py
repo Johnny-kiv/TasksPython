@@ -1,2 +1,2 @@
-inp = int(input("Enter the number: "))
-print("The number is an even:",inp%2==0)
+A = int(input("Enter the number A: "))
+print("The number is an odd:",A%2==1)
