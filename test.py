@@ -1,2 +1,2 @@
-mas = "Dhghg"
-print("D"in mas)
+b = [0]+[2]*2
+print(b)
