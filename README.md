@@ -1,4 +1,4 @@
-###################### Repository with Tasks
+Repository with olimpiad tasks by coding from:
 * https://acmp.ru/
 * Tasks Abramyn
   
