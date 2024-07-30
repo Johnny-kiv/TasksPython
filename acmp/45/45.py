@@ -11,12 +11,14 @@ for i in range(2,int(n**(0.5)+1)):
 if b:
     while True:
         mas = list(str(l))
+        print(mas)
         pr = 1
         for i in mas:
             pr*=int(i)
         if pr==n:
-            out.write(n)
             break
+        l+=1
 else:
-    out.write("-1")
+    l=-1
+out.write(str(l))
 out.close()
