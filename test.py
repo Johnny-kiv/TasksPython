@@ -1,2 +1,4 @@
-b = [0]+[2]*2
-print(b)
+import datetime
+start = datetime.datetime.now()
+print(1-1)
+print(datetime.datetime.now()-start)

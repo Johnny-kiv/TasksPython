@@ -8,7 +8,6 @@ if __name__=="__main__":
     a = int(input())
     b = int(input())
     c = int(input())
-
     mas1 = [a,b,c]
     mas2 = []
 
@@ -30,7 +29,7 @@ if __name__=="__main__":
     a1 = mas2[1]-mas2[0]
     g1 = mas2[1]/mas2[0]
     a2 = mas2[2]-mas2[1]
-    g2 = mas2[2]-mas2[1]
+    g2 = mas2[2]/mas2[1]
     if a1 == a2:
         res+="A "
         print(printm(mas2,res))
@@ -39,6 +38,4 @@ if __name__=="__main__":
         print(printm(mas2,res))  
     else:
         print("No") 
-            
-
         
