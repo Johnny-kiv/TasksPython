@@ -6,9 +6,14 @@ if __name__ == "__main__":
     start = datetime.datetime.now()
     mas_n = []
     mas_f = []
+    inds = {}
+    l=0
     for i in mas:
         if "." in i:
-            mas_n.append(i.split(".")[0])
+            if i.split(".")[0] in mas_n:
+                if mas_n.find(i.split(".")[0]):
+            else:
+                mas_n.append(i.split(".")[0])
             mas_f.append(i.split(".")[1])
         else:
             mas_n.append(i)
