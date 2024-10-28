@@ -7,7 +7,7 @@ d = m-x
 l = 0
 n = 0
 s = 0
-if 7*k<t:
+if 7*k<=t:
     print(-1)
 else:
     while s<d:
