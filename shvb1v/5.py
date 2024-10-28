@@ -1,11 +1,11 @@
 n = int(input())
-m=[]
+m=0
 for i in range(1,n+1):
     s = 0
     for y in range(i,n+1):
-        s=s+y
+        s+=y
         if s == n:
-            m.append(s)
+            m+=1
         elif s>n:
             break
-print(len(m))
+print(m)
