@@ -1,4 +1,4 @@
-st = "80 70 20 1200 500".split(" ")
+st = input().split(" ")
 p = int(st[0])
 m = int(st[1])
 k = int(st[2])
