@@ -16,7 +16,7 @@ else:
         if d==6:
             s-=p
         if d==7:
-            s-=p
+            s-=m
             d=0
             n+=1
         
