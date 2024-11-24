@@ -7,7 +7,7 @@ z = int(st[4])
 s = x+k-m
 d = 0
 n = 0
-if p+m>k*7:
+if p+m>=k*7:
     res=-1
 else:
     while s<z:
